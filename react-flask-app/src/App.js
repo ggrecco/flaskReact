@@ -6,7 +6,7 @@ function App() {
 
   const [currentTime, setCurrentTime] = useState(0);
 
-  const [ola, setOla] = useState();
+  const [ola, setOla] = useState("teste");
 
   useEffect(() => {
     fetch('/time').then(response => response.json()).then(data => {
